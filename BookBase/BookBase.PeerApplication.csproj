@@ -7,7 +7,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Npgsql" Version="8.0.3" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BookBase.Peer\BookBase.Peer.csproj" />
+    <ProjectReference Include="..\BookBase.Common\BookBase.Common.csproj" />
+    <ProjectReference Include="..\BookBase.Repository\BookBase.Repository.csproj" />
+    <ProjectReference Include="..\BookBase.Services\BookBase.Services.csproj" />
+    <ProjectReference Include="..\BookBase.Services.Abstractions\BookBase.Services.Abstractions.csproj" />
   </ItemGroup>
 
 </Project>
